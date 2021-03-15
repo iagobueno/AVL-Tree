@@ -128,7 +128,7 @@ t_node *deleteNode(t_node *p_node, int key){
 
 		// 2 children case or successor case 
 		if(p_node->right != NULL){
-			p_node->key = sucessor(p_node->right);
+			p_node->key = successor(p_node->right);
 
 			// adjusts pointer if we leave duplicates
 			if(p_node->key == p_node->right->key){
